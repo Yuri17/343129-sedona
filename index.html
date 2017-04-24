@@ -8,13 +8,10 @@
 		<body>
 			<div class="container">
 				<header class="main-header">
-<<<<<<< HEAD
 					<nav class="main-menu">
 						<ul>
-=======
 					<nav>
 						<ul class="menu clearfix">
->>>>>>> origin/master
 							<li>
 								<a href="#">Информация</a>
 							</li>
@@ -39,21 +36,23 @@
 						<img src="img/Welcome.png" alt="Welcome" width="458" height="352">
 					</div>
 					<section class="promo">
-						<div class="promo-conteiner">
-							<p class="promo-conteiner-title"><b>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
-							<p class="promo-conteiner-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+						<div class="promo-container">
+							<p class="promo-container-title"><b>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
+							<p class="promo-container-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 						</div>	
-						<div class="main-information">
+						<div class="main-information clearfix">
 							<div class="description">
-								<h2 class="description-title">Настоящий городок</h2>
-								<p class="description-number">№1</p>
-								<p class="description-text">Седона не атракцион для туристов, там<br> течёт своя жизнь</p>
+								<div class="description-features">
+									<p class="description-title"><b>Настоящий городок</b></p>
+									<p class="description-number">№1</p>
+									<p class="description-text">Седона не атракцион для туристов, там<br> течёт своя жизнь</p>
+								</div>
 							</div>
 							<div class="view">
 								<img src="img/pic1.jpg" alt="Город Седона" width="800" height="256">
 							</div>	
 						</div>
-						<div class="recommendations">
+						<div class="recommendations clearfix">
 							<div class="recom house">
 								<p class="recom-title"><b>Жилье</b></p>
 								<p class="recom-text">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
@@ -67,29 +66,31 @@
 								<p class="recom-text">Не только китайского, но и местного<br> производства!</p>
 							</div>
 						</div>
-						<div class="main-information">
-							<div class="view">
+						<div class="main-information clearfix">
+							<div class="view left">
 								<img src="img/pic2.jpg" alt="Мост дьявола" width="800" height="256">
 							</div>
 							<div class="description">
-								<h2 class="description-title">Там есть мост дьявола</h2>
-								<p class="description-number">№2</p>
-								<p class="description-text">Да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
+								<div class="description-features">
+									<p class="description-title"><b>Там есть мост дьявола</b></p>
+									<p class="description-number">№2</p>
+									<p class="description-text">Да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
+								</div>
 							</div>
 						</div>
 						<div class="other-promo">
 							<div class="features area">
-								<h2 class="features-title">Небольшая площадь</h2>
+								<p class="features-title"><b>Небольшая площадь</b></p>
 								<p class="features-number">№3</p>
 								<p class="features-text">Все достопримечательности находятся<br> очень близко</p>
 							</div>
 							<div class="features road">
-								<h2 class="features-title">Красивая дорога</h2>
+								<p class="features-title"><b>Красивая дорога</b></p>
 								<p class="features-number">№4</p>
 								<p class="features-text">Ехать в седону из лас-вегаса совсем не<br> скучно!</p>
 							</div>
 							<div class="features tourist">
-								<h2 class="features-title">Мало туристов</h2>
+								<p class="features-title"><b>Мало туристов</b></p>
 								<p class="features-number">№5</p>
 								<p class="features-text">Большинство едет в гранд каньон и<br> толпится там</p>
 							</div>
@@ -100,34 +101,42 @@
 						<h2 class="search-title">Заинтересовались?</h2>
 						<p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 						<div class="search-block">
-							<a href="#" class="search"><b>Поиск гостиницы в Седоне</b></a>
 							<div class="search-form">
 								<form method="post" action="\search">
-									<div class="search-form-date">
-										<div class="search-form-row in">
+									<h2 href="catalog.html" class="search-block-title">Поиск гостиницы в Седоне</h2>
+									<div class="search-form-content clearfix">
+										<div class="search-form-row">
 											<label class="search-form-label" for="search-in-date">Дата заезда:</label>
-											<input type="date" name="date-in" id="search-in-date" required>
+											<span class="date-span">
+												<input type="date" name="date-in" id="search-in-date" class="search-form-input" required>
+												<label for="search-in-date" class="cal-img">Date</label>
+											</span>
 										</div>
-										<div class="search-form-row out">
+										<div class="search-form-row clearfix">
 											<label class="search-form-label" for="search-out-date">Дата выезда:</label>
-											<input type="date" name="date-out" id="search-out-date" required>
+											<span class="date-span">
+												<input type="date" name="date-out" id="search-out-date" class="search-form-input" required>
+												<label for="search-out-date" class="cal-img">Date</label>
+											</span>
 										</div>
-									</div>
-									<div class="search-form-row guests">
 										<div class="search-form-adult">
 											<label class="search-form-label" for="col-adult">Взрослые:</label>
-											<a href="#" class="col-control subtract">-</a>
-											<input type="text" name="adult" id="col-adult" value="2" required>
-											<a href="#" class="col-control add">+</a>
+											<span class="col-span">
+												<a href="#" class="col-control subtract">-</a>
+												<input type="text" name="adult" id="col-adult" value="2" class="search-form-col" required>
+												<a href="#" class="col-control add">+</a>
+											</span>
 										</div>
 										<div class="search-form-junior">
 											<label class="search-form-label" for="col-junior">Дети:</label>
-											<a href="#" class="col-control subtract">-</a>
-											<input type="text" name="junior" id="col-junior" value="0" required>
-											<a href="#" class="col-control add">+</a>
+											<span class="col-span">
+												<a href="#" class="col-control subtract">-</a>
+												<input type="text" name="junior" id="col-junior" value="0" class="search-form-col" required>
+												<a href="#" class="col-control add">+</a>
+											</span>
 										</div>
+										<a href="#" class="search-btn"><b>Найти</b></a>	
 									</div>
-									<a href="#" class="search-btn"><b>Найти</b></a>
 								</form>
 							</div>
 						</div>

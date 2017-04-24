@@ -16,7 +16,6 @@ body {
 	color: #000000;
 	font-weight: normal;
 	font-family: 'PT Sans', sans-serif;
-	background: #ffd2ba;
 }
 
 h2 {
@@ -30,11 +29,6 @@ h2 {
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-<<<<<<< HEAD
-	background: #cca996;
-}
-
-=======
 }
 
 .menu-logo {
@@ -84,4 +78,240 @@ h2 {
 	bottom: 0;
 	background: url("../img/mask.png") 0 0 no-repeat;
 }
->>>>>>> origin/master
+
+.promo-container {
+	padding: 55px; 
+}
+
+.promo-container-title {
+	width: 444px;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 34px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.promo-container-text {
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.description {
+	float: left;
+	width: 400px;
+	min-height: 262px;
+}
+
+.view {
+	float: right;
+	width: 800px;
+}
+
+.description-features {
+	padding: 45px;
+}
+
+.description-title {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 34px;
+	line-height: 26px;
+	text-align: center; 
+}
+
+.description-number {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.description-text {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 0;
+    line-height: 21px;
+    text-align: center;
+}
+
+.recom {
+	width: 400px;
+	min-height: 329px;
+	padding: 55px;
+}
+
+.house,
+.food,
+.souvenirs {
+	float: left;
+}
+
+.recom-title {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 34px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.recom-text {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 0;
+    line-height: 21px;
+    text-align: center;
+}
+
+.view.left {
+	float: left;
+}
+
+.other-promo {
+	width: 100%;
+	min-height: 256px;
+}
+
+.features {
+	width: 400px;
+	min-height: 256px;
+	padding: 45px;
+}
+
+.area,
+.road,
+.tourist {
+	float: left;
+}
+
+.features-title {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 34px;
+	line-height: 26px;
+	text-align: center; 
+}
+
+.features-number {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.features-text {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 0;
+    line-height: 21px;
+    text-align: center;
+}
+
+.search {
+	position: relative;
+	padding-top: 55px; 
+}
+
+.search-title {
+	text-align: center;
+}
+
+.search-text {
+	width: 940px;
+	margin-top: 28px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 130px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.search-block {
+	position: absolute;
+	width: 568px;
+	min-height: 480px;
+	z-index: 50;
+	left: 50%;
+	top: 205px;
+	margin-left: -284px;
+}
+
+.search-block-title {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 86px;
+	text-align: center;
+	background-color: #766357;
+}
+
+.search-form-content {
+	padding: 55px;
+	min-height: 285px;
+	background-color: #ffffff;
+}
+
+.search-form-row {
+	display: inline-block;
+	width: 458px;
+	height: 38px;
+	margin-bottom: 29px;
+}
+
+.search-form-label {
+	float: left;
+	display: inline-block;
+	width: 112px;
+	height: 38px;
+	line-height: 21px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.date-span {
+	display: inline-block;
+	position: relative;
+	width: 346px;
+}
+
+.search-form-input {
+	width: 100%;
+	height: 38px;
+	background-color: #f2f2f2;
+	padding: 0;
+	padding-left: 14px;
+	padding-right: 40px;
+	font-size: 14px;
+}
+
+.search-form-adult,
+.search-form-junior {
+	display: inline-block;
+	height: 38px;
+	margin-bottom: 54px;
+}
+
+.search-form-adult {
+	width: 226px;
+	margin-right: 53px;
+}
+
+.search-form-junior {
+	width: 180px;
+}
+
+.col-span {
+	width: 114px;
+	height: 38px;
+	padding: 0;
+	margin: 0;
+}
