@@ -2,6 +2,7 @@
 	<html lang="ru">
 		<head>
 			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="css/style.css ">
 			<title>HTML Academy: Седона</title>
 		</head>
 		<body>
@@ -29,10 +30,10 @@
 				</header>
 
 				<main class="main-index">
-					<section class="filters">
+					<section class="filters clearfix">
 						<div class="col col1">
 							<form action="#" method="get" class="filter-category">
-								<h3 class="filter-title">Инфраструктура:</h3>
+								<h2 class="filter-title">Инфраструктура:</h2>
 								<input type="checkbox" id="infrastr1" name="pool" checked><label for="infrastr1">Бассейн</label>
 								<input type="checkbox" id="infrastr2" name="parking"><label for="infrastr2">Парковка</label>
 								<input type="checkbox" id="infrastr3" name="wi-fi"><label for="infrastr3">Wi-Fi</label>
@@ -40,7 +41,7 @@
 						</div>
 						<div class="col col2">
 							<form action="#" method="get" class="filter-category">
-								<h3 class="filter-title">Тип жилья:</h3>
+								<h2 class="filter-title">Тип жилья:</h2>
 								<input type="checkbox" id="type1" name="hotel" checked><label for="type1">Гостиница</label>
 								<input type="checkbox" id="type2" name="motel" checked><label for="type2">Мотель</label>							
 								<input type="checkbox" id="type3" name="apartaments" checked><label for="type3">Апартаменты</label>
@@ -48,7 +49,7 @@
 						</div>
 						<div class="col3">
 							<div class="filter-price">
-								<h3 class="filter-title price">Стоимость в сутки (р):</h3>
+								<h2 class="filter-title price">Стоимость в сутки (р):</h2>
 								<div class="filter-price-slider">
 									<label for="price-from">от</label>
 									<input class="min-price" id="price-from" type="number" value="0" min="0" max="5000">
@@ -66,21 +67,17 @@
 							<button class="search-button">Показать</button>
 						</div>
 					</section>
-					<section class="results">
-						<div class="sorting">
-							<div class="sorting-text">
-								<p class="results-title">Найдено: <span class="quantity">3</span></p>
-								<p class="sorting-title">Сортировка:</p>
-								<ul>
-									<li><a href="#" class="sort active">По цене</a></li>
-									<li><a href="#" class="sort">По типу</a></li>
-									<li><a href="#" class="sort">По рейтингу</a></li>
-								</ul>
-							</div>
-							<div class="sorting-controls">
-								<a class="arrow up" href="#">Up</a>
-								<a class="arrow down" href="#">Down</a>
-							</div>
+					<section class="results clearfix">
+						<p class="results-title">Найдено: <span class="quantity">3</span></p>
+						<p class="sorting-title">Сортировка:</p>
+						<ul>
+							<li><a href="#" class="sort active">По цене</a></li>
+							<li><a href="#" class="sort">По типу</a></li>
+							<li><a href="#" class="sort">По рейтингу</a></li>
+						</ul>
+						<div class="sorting-controls">
+							<a class="arrow up" href="#">Up</a>
+							<a class="arrow down" href="#">Down</a>
 						</div>
 					</section>
 					<section class="items">
