@@ -31,6 +31,12 @@ h2 {
 	margin-right: auto;
 }
 
+.inner {
+	width: 1056px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*======================================================
 						Header
 ========================================================*/
@@ -355,29 +361,27 @@ h2 {
 ====================================================*/
 
 .main-footer {
+	display: table;
 	width: 100%;
-	min-height: 120px;
 	padding: 0;
 }
 
 .section {
-	float: left;
+	display: table-cell;
 	width: 400px;
 	vertical-align: middle;
 	text-align: center;
+	padding: 36px 0;
 }
 
 .hashtag {
 	display: block;
-	margin-top: 50px;
 }
 
 .social-block {
 	width: 156px;
-	min-height: 120px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 36px;
 }
 
 .footer-social {
@@ -396,7 +400,7 @@ h2 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 41px;
+	margin: 0;
 }
 
 /*======================================================
@@ -418,7 +422,7 @@ h2 {
 }
 
 .col1 {
-	padding-left: 72px;
+	padding-left: 0px;
 	padding-right: 60px;
 }
 
@@ -430,18 +434,17 @@ h2 {
 .col3 {
 	float: right;
 	width: 322px;
-	margin-right: 70px;
 	padding: 32px;
-	padding-right: 70px;
+	padding-right: 0;
 	color: #ffffff;
 }
 
 .results {
 	width: 100%;
-	height: 86px;
-	border-bottom: 1px solid #e5e5e5;
-	padding-top: 30px;
-	padding-bottom: 30px;
+    height: 86px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .results-title {
@@ -453,20 +456,13 @@ h2 {
 
 .sorting-title {
 	float: left;
-	width: 80px;
 	margin: 0;
 	margin-left: 24px;
 }
 
 .sort {
-	position: absolute;
-	top: 273px;
-	left: 312px;
-	width: 400px;
-	height: 86px;
-	margin-left: 312px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	float: left;
+	margin: 0;
 }
 
 .sort-price {
@@ -514,15 +510,17 @@ h2 {
 
 .item-view {
 	float: left;
+	margin-right: -135px;
+	position: relative;
 	width: 135px;
-	height: 90px;
+	line-height: 0;
 }
 
 .item-description {
 	float: left;
-	width: 300px;
-	height: 90px;
-	margin-left: 30px;
+	width: 100%;
+	padding-left: 165px;
+	padding-right: 120px;
 }
 
 .item-title {
@@ -570,10 +568,11 @@ h2 {
 	height: 28px;
 }
 
-.item-rating {
+.item-rating {    
 	float: right;
-	width: 110 px;
-	height: 90px;
+	width: 110px;
+	margin-left: -110px;
+	position: relative;
 }
 
 .rating-stars {
