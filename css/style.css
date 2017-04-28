@@ -111,6 +111,11 @@ h2 {
 	margin-bottom: 34px;
 	text-align: center;
 	line-height: 26px;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .promo-container-text {
@@ -118,6 +123,11 @@ h2 {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #333333;
+	text-transform: uppercase;
+	line-height: 26px;
 }
 
 .main-information {
@@ -138,38 +148,62 @@ h2 {
 }
 
 .description-features {
+	min-height: 256px;
 	padding: 45px;
+	background-color: #81b3d2;
 }
 
 .description-title {
 	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 34px;
-	line-height: 26px;
-	text-align: center; 
+	margin-bottom: 24px;
+	line-height: 21px;
+	text-align: center;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .description-number {
-	margin-top: 10px;
+	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	line-height: 21px;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.description-number::after,
+.description-number::before,
+.features-number::after,
+.features-number::before {
+	content: " — ";
 }
 
 .description-text {
-	margin-top: 20px;
+	margin-top: 24px;
 	margin-left: auto;
 	margin-right: auto;
-    margin-bottom: 0;
-    line-height: 21px;
-    text-align: center;
+	margin-bottom: 0;
+	line-height: 21px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .recom {
 	width: 400px;
 	min-height: 329px;
 	padding: 55px;
+	padding-top: 0;
 }
 
 .house,
@@ -179,21 +213,30 @@ h2 {
 }
 
 .recom-title {
-	margin-top: 0;
+	margin-top: 160px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 34px;
-	line-height: 26px;
+	margin-bottom: 24px;
 	text-align: center;
+	line-height: 21px;
+	font-size: 21px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .recom-text {
-	margin-top: 20px;
+	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
     margin-bottom: 0;
     line-height: 21px;
     text-align: center;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .view.left {
@@ -223,25 +266,41 @@ h2 {
 	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 34px;
-	line-height: 26px;
-	text-align: center; 
+	margin-bottom: 24px;
+	line-height: 21px;
+	text-align: center;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .features-number {
-	margin-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	line-height: 21px;
+    text-align: center;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .features-text {
-	margin-top: 20px;
+	margin-top: 24px;
 	margin-left: auto;
 	margin-right: auto;
     margin-bottom: 0;
     line-height: 21px;
     text-align: center;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #000000;
+	text-transform: uppercase;  
 }
 
 
@@ -255,7 +314,13 @@ h2 {
 }
 
 .search-title {
+	margin-top: 0; 
 	text-align: center;
+	font-size: 30px;
+	font-family: "PT Sans";
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .search-text {
@@ -263,9 +328,13 @@ h2 {
 	margin-top: 28px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 115px;
+	margin-bottom: 136px;
 	line-height: 24px;
 	text-align: center;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .search-block {
@@ -274,7 +343,7 @@ h2 {
 	min-height: 480px;
 	z-index: 50;
 	left: 50%;
-	top: 205px;
+	top: 207px;
 	margin-left: -284px;
 }
 
@@ -451,7 +520,6 @@ h2 {
 	float: left;
 	width: 140px;
 	margin: 0;
-	margin-left: 72px;
 }
 
 .sorting-title {
@@ -489,8 +557,6 @@ h2 {
 .sorting-controls {
 	float: right;
 	width: 40px;
-	margin: 0;
-	margin-right: 70px;
 }
 
 .arrow {
@@ -500,10 +566,8 @@ h2 {
 
 .item {
 	width: 100%;
-	height: 151px;
+	min-height: 151px;
 	border-bottom: 1px solid #e5e5e5;
-	padding-left: 72px;
-	padding-right: 72px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -525,47 +589,57 @@ h2 {
 
 .item-title {
 	width: 300px;
-	height: 16px;
-	margin-bottom: 16px;
+	line-height: 26px;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
 }
 
 .item-text {
 	width: 300px;
-	line-height: 14px;
+	line-height: 21px;
 	margin-top: 16px;
 	margin-bottom: 14px;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: rgb(51, 51, 51);
+	text-transform: uppercase;
+	text-align: left;
 }
 
 .type {
 	float: left;
 	width: 95px;
-	height: 14px;
+	line-height: 21px;
 	margin: 0;
 }
 
 .price {
 	float: left;
-	height: 14px;
+	line-height: 21px;
 	margin: 0;
 	margin-left: 21px; 
 }
 
 .item-buttons {
 	width: 300px;
-	height: 28px;
+	height: 27px;
 }
 
 .btn-details {
 	float: left;
-	width: 110 px;
-	height: 28px;
+	width: 110px;
+	height: 27px;
 }
 
 .btn-reserv {
 	float: left;
 	width: 143px;
 	margin-left: 6px;
-	height: 28px;
+	height: 27px;
 }
 
 .item-rating {    
