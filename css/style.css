@@ -15,13 +15,7 @@ body {
 	line-height: 21px;
 	color: #000000;
 	font-weight: normal;
-	font-family: 'PT Sans', sans-serif;
-}
-
-h2 {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;	
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .container {
@@ -81,6 +75,18 @@ h2 {
 .menu li:nth-child(4) {
 	float: right;
 }
+
+.menu a {
+	font-size: 14px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 26px;
+	text-decoration: none;
+	color: #000000;
+}
+
 
 /*=============================================
 					Main
@@ -220,7 +226,7 @@ h2 {
 }
 
 .recom-title {
-	margin-top: 160px;
+	margin-top: 28px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 24px;
@@ -231,6 +237,26 @@ h2 {
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
+}
+
+.recom::before {
+	content: "";
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	width: 75px;
+	height: 72px;
+	background: url("../img/rec-sprite.png") no-repeat;
+}
+
+.recom.food::before {
+	background-position: -76px 1px;
+}
+
+.recom.souvenirs::before {
+	width: 62px;
+	background-position: -150px 0px;
 }
 
 .recom-text {
@@ -324,6 +350,7 @@ h2 {
 	margin-top: 0; 
 	text-align: center;
 	font-size: 30px;
+	line-height: 24px;
 	font-family: "PT Sans";
 	color: #000000;
 	font-weight: bold;
@@ -335,7 +362,7 @@ h2 {
 	margin-top: 28px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 136px;
+	margin-bottom: 138px;
 	line-height: 24px;
 	text-align: center;
 	font-size: 14px;
@@ -361,6 +388,11 @@ h2 {
 	line-height: 86px;
 	text-align: center;
 	background-color: #766357;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .search-form-content {
@@ -380,10 +412,13 @@ h2 {
 	float: left;
 	display: inline-block;
 	width: 112px;
-	height: 38px;
-	line-height: 21px;
+	line-height: 38px;
 	vertical-align: middle;
 	text-align: left;
+	font-size: 14px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .date-span {
@@ -393,6 +428,7 @@ h2 {
 }
 
 .search-form-input {
+	position: relative;
 	width: 100%;
 	height: 38px;
 	background-color: #f2f2f2;
@@ -400,6 +436,24 @@ h2 {
 	padding-left: 14px;
 	padding-right: 40px;
 	font-size: 14px;
+	border: none;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.cal-img {
+	position: absolute;
+	top: 8px;
+	left: 320px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background: url("../img/icon-sprite.png") no-repeat;
+	opacity: 0.4;
 }
 
 .search-form-adult,
@@ -410,11 +464,13 @@ h2 {
 }
 
 .search-form-adult {
+	float: left;
 	width: 226px;
-	margin-right: 53px;
+	margin-right: 50px;
 }
 
 .search-form-junior {
+	float: right;
 	width: 180px;
 }
 
@@ -423,6 +479,54 @@ h2 {
 	height: 38px;
 	padding: 0;
 	margin: 0;
+}
+
+.col-control {
+	float: left;
+	display: inline-block;
+	position: relative;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+	text-align: center;
+	line-height: 38px;
+	font-size: 0px;
+	vertical-align: center;
+	text-decoration: none;
+}
+
+.search-form-col {
+	float: left;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+	border: none;
+	text-align: center;
+	font-size: 14px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.search-form-junior label {
+	width: 65px;
+}
+
+.search-btn {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 16px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #81b3d2;
+	font-size: 21px;
+	line-height: 26px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 /*Карта*/
@@ -452,6 +556,12 @@ h2 {
 
 .hashtag {
 	display: block;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .social-block {
@@ -477,6 +587,12 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	margin: 0;
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #000000;
+	text-transform: uppercase;
+	line-height: 26px;
+	text-align: center;
 }
 
 /*======================================================
@@ -662,7 +778,7 @@ h2 {
 	text-align: right;
 }
 
-span {
+.star {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
