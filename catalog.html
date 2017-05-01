@@ -37,17 +37,35 @@
 							<div class="col col1">
 								<form action="#" method="get" class="filter-category">
 									<h2 class="filter-title">Инфраструктура:</h2>
-									<input type="checkbox" id="infrastr1" name="pool" checked><label for="infrastr1">Бассейн</label>
-									<input type="checkbox" id="infrastr2" name="parking"><label for="infrastr2">Парковка</label>
-									<input type="checkbox" id="infrastr3" name="wi-fi"><label for="infrastr3">Wi-Fi</label>
+									<p class="check">
+										<input type="checkbox" id="infrastr1" name="pool" checked>
+										<label for="infrastr1" class="label">Бассейн</label>
+									</p>
+									<p class="check">
+										<input type="checkbox" id="infrastr2" name="parking">	
+										<label for="infrastr2" class="label">Парковка</label>
+									</p>
+									<p class="check">
+										<input type="checkbox" id="infrastr3" name="wi-fi">
+										<label for="infrastr3" class="label">Wi-Fi</label>
+									</p>
 								</form>
 							</div>
 							<div class="col col2">
 								<form action="#" method="get" class="filter-category">
 									<h2 class="filter-title">Тип жилья:</h2>
-									<input type="checkbox" id="type1" name="hotel" checked><label for="type1">Гостиница</label>
-									<input type="checkbox" id="type2" name="motel" checked><label for="type2">Мотель</label>							
-									<input type="checkbox" id="type3" name="apartaments" checked><label for="type3">Апартаменты</label>
+									<p class="check">
+										<input type="checkbox" id="type1" name="hotel" checked>
+										<label for="type1" class="label">Гостиница</label>
+									</p>
+									<p class="check">
+										<input type="checkbox" id="type2" name="motel" checked>
+										<label for="type2" class="label">Мотель</label>		
+									</p>
+									<p class="check">					
+										<input type="checkbox" id="type3" name="apartaments" checked>
+										<label for="type3" class="label">Апартаменты</label>
+									</p>
 								</form>
 							</div>
 							<div class="col3">
@@ -73,16 +91,16 @@
 					</section>
 					<section class="results clearfix">
 						<div class="inner clearfix">
-							<p class="results-title">Найдено: <span class="quantity">3</span></p>
+							<p class="results-title">Найдено: 3</p>
 							<p class="sorting-title">Сортировка:</p>
 							<ul class="sort clearfix">
-								<li class="sort-price active"><a href="#">По цене</a></li>
+								<li class="sort-type"><a href="#" class="active">По цене</a></li>
 								<li class="sort-type"><a href="#">По типу</a></li>
-								<li class="sort-rat"><a href="#">По рейтингу</a></li>
+								<li class="sort-type"><a href="#">По рейтингу</a></li>
 							</ul>
 							<div class="sorting-controls clearfix">
+								<a class="arrow down click" href="#">Down</a>
 								<a class="arrow up" href="#">Up</a>
-								<a class="arrow down" href="#">Down</a>
 							</div>
 						</div>
 					</section>

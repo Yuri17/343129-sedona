@@ -461,14 +461,14 @@ a.active {
 	background-color: #ebebeb;
 }
 
-/*==================================================================================================================
+input {
+	outline: none;
+}
 
-.search-form-input:active {
+.search-form-input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 }
-
-==================================================================================================================*/
 
 .cal-img {
 	position: absolute;
@@ -590,7 +590,7 @@ a.active {
 	font-size: 21px;
 	line-height: 26px;
 	font-family: "PT Sans";
-	color: #ffffff;
+	color: rgba(255, 255, 255, 1);
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -600,14 +600,10 @@ a.active {
 	background-color: #669ec0;
 }
 
-/*=================================================================================================================================
-
 .search-btn:active {
 	background-color: #5496bd;
-	color: #88b6d1;
+	color: rgba(255, 255, 255, 0.4);
 }
-
-==================================================================================================================================*/
 
 /*Карта*/
 
@@ -731,11 +727,11 @@ a.active {
 }
 
 .footer-copyright-img:hover::after {
-	background-position: 0 -39px;
+	background-position: 0 -39.5px;
 }
 
 .footer-copyright-img:active::after {
-	background-position: 0 0;
+	background-position: 0 0.5px;
 }
 
 /*======================================================
@@ -752,7 +748,8 @@ a.active {
 .col {
 	float: left;
 	width: 273px;
-	padding: 32px;
+	padding-top: 32px;
+
 	color: #ffffff;
 }
 
@@ -774,6 +771,32 @@ a.active {
 	color: #ffffff;
 }
 
+.filter-title {
+	font-size: 16px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 21px;
+	text-align: left;
+	margin: 0;
+    margin-bottom: 24px;
+}
+
+.check {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.check .label {
+	font-size: 14px;
+	font-family: "PT Sans";
+	color: #ffffff;
+	text-transform: uppercase;
+	line-height: 21px;
+	text-align: left;
+}
+
 .results {
 	width: 100%;
 	height: 86px;
@@ -786,12 +809,26 @@ a.active {
 	float: left;
 	width: 140px;
 	margin: 0;
+	font-size: 21px;
+	font-family: "PT Sans";
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 26px;
+	text-align: left;
 }
 
 .sorting-title {
 	float: left;
 	margin: 0;
 	margin-left: 24px;
+	font-size: 12px;
+	font-family: "PT Sans";
+	color: #000000;
+	line-height: 26px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: left;
 }
 
 .sort {
@@ -799,21 +836,50 @@ a.active {
 	margin: 0;
 }
 
-.sort-price {
+.sort-type {
+	list-style: none;
+}
+
+.sort-type a {
+	float: left;
+	font-size: 12px;
+	font-family: "PT Sans";
+	color: #b2b2b2;
+	line-height: 26px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: left;
+	text-decoration: underline dotted #b2b2b2; /*не работает*/
+}
+
+.sort-type .active {
+	text-decoration: none;
+	color: #81b3d2;
+}
+
+.sort-type:hover {
+	color: #81b3d2;
+}
+
+.sort-type:active {
+	color: #000000;
+}
+
+.sort-type:nth-child(1) {
 	float: left;
 	width: 60px;
 	margin: 0;
 	margin-left: 29px;
 }
 
-.sort-type {
+.sort-type:nth-child(2) {
 	float: left;
 	width: 60px;
 	margin: 0;
-	margin-left: 22px;
+	margin-left: 29px;
 }
 
-.sort-rat {
+.sort-type:nth-child(3) {
 	float: left;
 	width: 80px;
 	margin: 0;
@@ -828,6 +894,35 @@ a.active {
 .arrow {
 	float: right;
 	width: 17px;
+	font-size: 0;
+}
+
+.up {
+	background: url("../img/icon-sprite.png") -284px 0px no-repeat;
+}
+
+.up:hover {
+	background: url("../img/icon-sprite.png") -302px 0px no-repeat;
+}
+
+.up:active {
+	background: url("../img/icon-sprite.png") -320px 0px no-repeat;
+}
+
+.down {
+	background: url("../img/icon-sprite.png") -337px 0px no-repeat;
+}
+
+.down:hover {
+	background: url("../img/icon-sprite.png") -358px 0px no-repeat;
+}
+
+.down:active {
+	background: url("../img/icon-sprite.png") -377px 0px no-repeat;
+}
+
+a.click {
+	background: url("../img/icon-sprite.png") -377px 0px no-repeat;
 }
 
 .item {
