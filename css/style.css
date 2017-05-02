@@ -23,6 +23,7 @@ body {
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .inner {
@@ -895,14 +896,15 @@ input {
 
 .toggle {
 	position: absolute;
-	top: -7px;
-	width: 4px;
-	height: 4px;
-	background: #ababab;
-	border: 8px solid #ffffff;
-	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-	cursor: pointer;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+    box-sizing: content-box;
 }
 
 .toggle:hover {
@@ -985,10 +987,9 @@ input {
 	font-family: "PT Sans";
 	color: #b2b2b2;
 	line-height: 26px;
-	vertical-align: middle;
 	text-transform: uppercase;
-	text-align: left;
-	text-decoration: underline dotted; /*не работает*/
+	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 
 .sort-type .active {
