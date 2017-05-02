@@ -38,16 +38,25 @@
 								<form action="#" method="get" class="filter-category">
 									<h2 class="filter-title">Инфраструктура:</h2>
 									<p class="check">
-										<input type="checkbox" id="infrastr1" name="pool" checked>
-										<label for="infrastr1" class="label">Бассейн</label>
+										<label for="infrastr1" class="label-checkbox">
+											<input type="checkbox" id="infrastr1" name="pool" checked>
+											<span class="checkbox-indicator"></span>
+											Бассейн
+										</label>
 									</p>
 									<p class="check">
-										<input type="checkbox" id="infrastr2" name="parking">	
-										<label for="infrastr2" class="label">Парковка</label>
+										<label for="infrastr2" class="label-checkbox">
+											<input type="checkbox" id="infrastr2" name="parking">
+											<span class="checkbox-indicator"></span>	
+											Парковка
+										</label>
 									</p>
 									<p class="check">
-										<input type="checkbox" id="infrastr3" name="wi-fi">
-										<label for="infrastr3" class="label">Wi-Fi</label>
+										<label for="infrastr3" class="label-checkbox">
+											<input type="checkbox" id="infrastr3" name="wi-fi">
+											<span class="checkbox-indicator"></span>
+											Wi-Fi
+										</label>
 									</p>
 								</form>
 							</div>
@@ -55,27 +64,38 @@
 								<form action="#" method="get" class="filter-category">
 									<h2 class="filter-title">Тип жилья:</h2>
 									<p class="check">
-										<input type="checkbox" id="type1" name="hotel" checked>
-										<label for="type1" class="label">Гостиница</label>
+										<label for="type1" class="label-checkbox">
+											<input type="checkbox" id="type1" name="hotel" checked>
+											<span class="checkbox-indicator"></span>
+											Гостиница
+										</label>
 									</p>
 									<p class="check">
-										<input type="checkbox" id="type2" name="motel" checked>
-										<label for="type2" class="label">Мотель</label>		
+										<label for="type2" class="label-checkbox">
+											<input type="checkbox" id="type2" name="motel" checked>
+											<span class="checkbox-indicator"></span>
+											Мотель
+										</label>		
 									</p>
-									<p class="check">					
-										<input type="checkbox" id="type3" name="apartaments" checked>
-										<label for="type3" class="label">Апартаменты</label>
+									<p class="check">
+										<label for="type3" class="label-checkbox">					
+											<input type="checkbox" id="type3" name="apartaments" checked>
+											<span class="checkbox-indicator"></span>
+											Апартаменты
+										</label>
 									</p>
 								</form>
 							</div>
 							<div class="col3">
 								<div class="filter-price">
-									<h2 class="filter-title-price">Стоимость в сутки (р):</h2>
+									<div class="filter-title-price">Стоимость в сутки (р):</div>
 									<div class="filter-price-slider">
-										<label for="price-from">от</label>
-										<input class="min-price" id="price-from" type="text" value="0" min="0" max="5000">
-										<label for="price-to">до</label>
-										<input class="max-price" id="price-to" type="text" value="3000" min="0" max="5000">
+										<label for="price-from" class="min-price">от
+											<input id="price-from" type="text" value="0" min="0" max="5000">
+										</label>
+										<label for="price-to" class="max-price">до
+											<input id="price-to" type="text" value="3000" min="0" max="5000">
+										</label>
 									</div>
 									<div class="range-control">
 										<div class="scale">
@@ -85,7 +105,7 @@
 										<div class="toggle max-toggle"></div>
 									</div>
 								</div>
-								<button class="search-button">Показать</button>
+								<button class="search-button" type="submit">Показать</button>
 							</div>
 						</div>
 					</section>
@@ -145,8 +165,8 @@
 										<p class="price">от 2000 р.</p>
 									</div>
 									<div class="item-buttons clearfix">
-										<a href="#" class="item-btn details">Подробнее</a>
-										<a href="#" class="item-btn reserv">Забронировать</a>
+										<a href="#" class="btn-details">Подробнее</a>
+										<a href="#" class="btn-reserv">Забронировать</a>
 									</div>
 								</div>
 								<div class="item-rating">
@@ -171,8 +191,8 @@
 										<p class="price">от 4000 р.</p>
 									</div>
 									<div class="item-buttons clearfix">
-										<a href="#" class="item-btn details">Подробнее</a>
-										<a href="#" class="item-btn reserv">Забронировать</a>
+										<a href="#" class="btn-details">Подробнее</a>
+										<a href="#" class="btn-reserv">Забронировать</a>
 									</div>
 								</div>
 								<div class="item-rating">
@@ -200,7 +220,7 @@
 					</section>
 					<section class="section copyright">
 						<p class="footer-copyright-text">Website by
-						<a class="footer-copyright-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+							<a class="footer-copyright-img" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 						</p>						
 					</section>
 				</footer>
