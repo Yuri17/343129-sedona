@@ -32,6 +32,12 @@ body {
 	margin-right: auto;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 /*======================================================
 						Header
 ========================================================*/
@@ -49,12 +55,6 @@ body {
 	width: 138px;
 	height: 70px;
 	margin-left: -69px;
-}
-
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
 }
 
 .menu {
@@ -76,11 +76,10 @@ body {
 }
 
 .menu a {
-	display: block;
-	padding-top: 15px;
+	display: inline-block;
+	padding-top: 14px;
 	padding-bottom: 15px;
 	font-size: 14px;
-	font-family: "PT Sans";
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
@@ -110,8 +109,8 @@ a.active {
 	padding-top: 76px;
 	padding-bottom: 80px;
 	text-align: center;
-	height: 530px;
-	background: url("../img/background-photo.jpg") no-repeat;
+	height: 509px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background: url("../img/background-photo.jpg") 0 -55px no-repeat;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	background-color: #88b4fc; 
 }
 
@@ -126,19 +125,17 @@ a.active {
 }
 
 .promo-container {
-	padding: 55px; 
+	padding: 55px;
+	padding-bottom: 37px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
 }
 
 .promo-container-title {
-	width: 444px;
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	margin-top: 5px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin-bottom: 34px;
 	text-align: center;
 	line-height: 26px;
 	font-size: 21px;
-	font-family: "PT Sans";
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -147,10 +144,8 @@ a.active {
 .promo-container-text {
 	width: 100%;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: -7px;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #333333;
 	text-transform: uppercase;
 	line-height: 26px;
@@ -164,7 +159,6 @@ a.active {
 .description {
 	float: left;
 	width: 400px;
-	min-height: 256px;
 }
 
 .view {
@@ -174,33 +168,25 @@ a.active {
 }
 
 .description-features {
-	min-height: 256px;
 	padding: 45px;
 	background-color: #81b3d2;
 }
 
 .description-title {
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 2px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin-bottom: 24px;
 	line-height: 21px;
 	text-align: center;
 	font-size: 21px;
-	font-family: "PT Sans";
 	color: #ffffff;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .description-number {
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	line-height: 21px;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -213,21 +199,16 @@ a.active {
 }
 
 .description-text {
-	margin-top: 24px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0;
+	margin-top: 21px;
 	line-height: 21px;
 	text-align: center;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #ffffff;
 	text-transform: uppercase;
 }
 
 .recom {
 	width: 400px;
-	min-height: 329px;
 	padding: 55px;
 	padding-top: 0;
 }
@@ -239,14 +220,11 @@ a.active {
 }
 
 .recom-title {
-	margin-top: 28px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 24px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin-bottom: 24px;
 	text-align: center;
 	line-height: 21px;
 	font-size: 21px;
-	font-family: "PT Sans";
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
@@ -259,24 +237,20 @@ a.active {
 	margin-right: auto;
 	margin-top: 60px;
 	width: 75px;
-	height: 72px;
+	height: 77px;
 	background: url("../img/rec-sprite.png") no-repeat;
 }
 
 .recom.food::before {
-	background-position: -76px 1px;
+	background-position: -75px 0px;
 }
 
 .recom.souvenirs::before {
-	width: 62px;
-	background-position: -150px 0px;
+	background-position: -150px -1px;
 }
 
 .recom-text {
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0;
+	margin-bottom: 27px;
 	line-height: 21px;
 	text-align: center;
 	font-size: 14px;
@@ -309,35 +283,26 @@ a.active {
 }
 
 .features-title {
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 2px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin-bottom: 24px;
 	line-height: 21px;
 	text-align: center;
 	font-size: 21px;
-	font-family: "PT Sans";
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .features-number {
-	margin-top: 0px;
-	margin-bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	line-height: 21px;
-	text-align: center;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #000000;
 	text-transform: uppercase;
 }
 
 .features-text {
-	margin-top: 24px;
+	margin-top: 21px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
@@ -360,26 +325,22 @@ a.active {
 }
 
 .search-title {
-	margin-top: 0; 
+	margin-top: 1px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
 	text-align: center;
 	font-size: 30px;
 	line-height: 24px;
-	font-family: "PT Sans";
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .search-text {
-	width: 940px;
-	margin-top: 28px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 138px;
+	width: 100%;
+	margin-top: 30px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-bottom: 133px;
 	line-height: 24px;
 	text-align: center;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -390,7 +351,7 @@ a.active {
 	min-height: 480px;
 	z-index: 50;
 	left: 50%;
-	top: 207px;
+	top: 205px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin-left: -284px;
 }
 
@@ -423,13 +384,9 @@ a.active {
 
 .search-form-label {
 	float: left;
-	display: inline-block;
 	width: 112px;
 	line-height: 38px;
-	vertical-align: middle;
-	text-align: left;
 	font-size: 14px;
-	font-family: "PT Sans";
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -516,15 +473,12 @@ input {
 
 .col-control {
 	float: left;
-	display: inline-block;
 	position: relative;
 	width: 38px;
 	height: 38px;
 	background-color: #f2f2f2;
-	text-align: center;
 	line-height: 38px;
 	font-size: 0px;
-	vertical-align: center;
 	text-decoration: none;
 }
 
@@ -552,7 +506,7 @@ input {
 }
 
 .add::after {
-	background: url("../img/icon-sprite.png") -172px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -171px 1px no-repeat;
 }
 
 .add:hover::after {
@@ -584,13 +538,13 @@ input {
 	display: inline-block;
 	width: 100%;
 	margin: 0;
+	margin-top: 1px;
 	padding: 16px;
 	text-align: center;
 	vertical-align: middle;
 	background-color: #81b3d2;
 	font-size: 21px;
 	line-height: 26px;
-	font-family: "PT Sans";
 	color: rgba(255, 255, 255, 1);
 	font-weight: bold;
 	text-transform: uppercase;
@@ -611,6 +565,7 @@ input {
 .map {
 	width: 100%;
 	height: 593px;
+	background: url("../img/map.jpg") no-repeat;
 }
 
 /*===================================================
@@ -621,6 +576,7 @@ input {
 	display: table;
 	width: 100%;
 	padding: 0;
+	background: #ffffff;
 }
 
 .section {
@@ -702,13 +658,13 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 	margin: 0;
+	padding-right: 115px;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #000000;
 	text-transform: uppercase;
 	line-height: 26px;
 	text-align: center;
-} /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!уехала вправо!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+} 
 
 .footer-copyright-img {
 	position: relative;
@@ -749,26 +705,26 @@ input {
 .col {
 	float: left;
 	width: 273px;
-	padding-top: 32px;
+	padding-top: 28px;
 
 	color: #ffffff;
 }
 
 .col1 {
+	width: 200px;
 	padding-left: 0px;
 	padding-right: 60px;
 }
 
 .col2 {
-	padding-left: 50px;
+	padding-left: 54px;
 	padding-right: 80px;
 }
 
 .col3 {
 	float: right;
-	width: 330px;
-	padding: 32px;
-	padding-right: 0;
+	width: 318px;
+	padding: 28px 0;
 	color: #ffffff;
 }
 
@@ -786,7 +742,7 @@ input {
 
 .check {
 	width: 100%;
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 }
 
 .label-checkbox input[type="checkbox"] {
@@ -795,14 +751,18 @@ input {
 
 .label-checkbox {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 40px;
 	cursor: pointer;
 	font-size: 14px;
-	font-family: "PT Sans";
 	color: #ffffff;
 	text-transform: uppercase;
 	line-height: 21px;
+	vertical-align: middle;
 	text-align: left;
+}
+
+.col2 .label-checkbox {
+	padding-left: 43px;
 }
 
 .label-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -810,13 +770,13 @@ input {
 	top: 0px;
 	left: -2px;
 	width: 26px;
-	height: 22px;
-	background: url("../img/icon-sprite.png") -67px 0px no-repeat;
+	height: 24px;
+	background: url("../img/icon-sprite.png") -67px -1px no-repeat;
 }
 
 .label-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
 	left: 0;
-	background: url("../img/icon-sprite.png") -115px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -115px -1px no-repeat;
 }
 
 .filter-price {
@@ -827,7 +787,8 @@ input {
 
 .filter-title-price {
 	margin-top: 0;
-	margin-bottom: 9px;
+	margin-bottom: 10px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	padding-left: 1px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
@@ -856,17 +817,16 @@ input {
 .filter-price-slider label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
-	vertical-align: top;
+	line-height: 30px;
 	cursor: pointer;
 }
 
-.filter-price-slider .min-price,
+.filter-price-slider .min-price {
+	padding-left: 65px;
+}
+
 .filter-price-slider .max-price {
-	width: 140px;
-	padding-left: 55px;
-	line-height: 32px;
-	vertical-align: middle;
+	padding-left: 76px;
 }
 
 .filter-price-slider input {
@@ -921,7 +881,9 @@ input {
 
 .search-button {
 	display: block;
+	width: 137px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin: 0 auto;
+	margin-right: 96px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	padding: 6px 35px;
 	font-size: 14px;
 	line-height: 20px;
@@ -940,9 +902,8 @@ input {
 
 .results {
 	width: 100%;
-	height: 86px;
 	border-bottom: 1px solid #e5e5e5;
-	padding-top: 30px;
+	padding-top: 31px;
 	padding-bottom: 30px;
 }
 
@@ -951,30 +912,27 @@ input {
 	width: 140px;
 	margin: 0;
 	font-size: 21px;
-	font-family: "PT Sans";
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 26px;
-	text-align: left;
 }
 
 .sorting-title {
 	float: left;
 	margin: 0;
+	margin-top: 4px;
 	margin-left: 24px;
 	font-size: 12px;
-	font-family: "PT Sans";
 	color: #000000;
-	line-height: 26px;
-	vertical-align: middle;
+	line-height: 21px;
 	text-transform: uppercase;
-	text-align: left;
 }
 
 .sort {
 	float: left;
 	margin: 0;
+	margin-top: 9px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .sort-type {
@@ -984,47 +942,47 @@ input {
 .sort-type a {
 	float: left;
 	font-size: 12px;
-	font-family: "PT Sans";
 	color: #b2b2b2;
-	line-height: 26px;
+	line-height: 12px;
 	text-transform: uppercase;
-	text-decoration: underline;
-	text-decoration-style: dotted;
+	text-decoration: none;
+	border-bottom: 1px dotted #b2b2b2; 
 }
 
 .sort-type .active {
-	text-decoration: none;
+	border: none;
 	color: #81b3d2;
 }
 
 .sort-type a:hover {
 	color: #81b3d2;
+	border-color: #81b3d2;
 }
 
 .sort-type a:active {
 	color: #000000;
-	text-decoration: none;
+	border: none;
 }
 
 .sort-type:nth-child(1) {
 	float: left;
 	width: 60px;
 	margin: 0;
-	margin-left: 29px;
+	/*margin-left: 29px;*/
 }
 
 .sort-type:nth-child(2) {
 	float: left;
 	width: 60px;
 	margin: 0;
-	margin-left: 29px;
+	margin-left: 22px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .sort-type:nth-child(3) {
 	float: left;
 	width: 80px;
 	margin: 0;
-	margin-left: 29px;
+	margin-left: 22px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .sorting-controls {
@@ -1039,47 +997,46 @@ input {
 }
 
 .up {
-	background: url("../img/icon-sprite.png") -284px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -284px 10px no-repeat;
 }
 
 .up:hover {
-	background: url("../img/icon-sprite.png") -302px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -302px 10px no-repeat;
 }
 
 .up:active {
-	background: url("../img/icon-sprite.png") -320px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -320px 10px no-repeat;
 }
 
 .down {
-	background: url("../img/icon-sprite.png") -337px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -337px 10px no-repeat;
 }
 
-.down:hover {
-	background: url("../img/icon-sprite.png") -358px 0px no-repeat;
+/*.down:hover {
+	background: url("../img/icon-sprite.png") -358px 10px no-repeat;
 }
 
 .down:active {
-	background: url("../img/icon-sprite.png") -377px 0px no-repeat;
-}
+	background: url("../img/icon-sprite.png") -377px 10px no-repeat;
+}*/
 
 a.click {
-	background: url("../img/icon-sprite.png") -377px 0px no-repeat;
+	background: url("../img/icon-sprite.png") -372px 9px no-repeat;
 }
 
 .item {
 	width: 100%;
-	min-height: 151px;
 	border-bottom: 1px solid #e5e5e5;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 27px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	padding-bottom: 24px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .item-view {
 	float: left;
-	margin-right: -135px;
 	position: relative;
 	width: 135px;
-	line-height: 0;
+	margin-top: 3px;
+	margin-right: -135px;
 }
 
 .item-description {
@@ -1113,11 +1070,10 @@ a.click {
 .item-text {
 	width: 300px;
 	line-height: 21px;
-	margin-top: 9px;
-	margin-bottom: 9px;
+	margin-top: 7px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-bottom: 14px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	font-size: 14px;
-	font-family: "PT Sans";
-	color: rgb(51, 51, 51);
+	color: #000000 ;
 	text-transform: uppercase;
 	text-align: left;
 }
@@ -1203,7 +1159,7 @@ a.click {
 
 .rating-stars {
 	width: 110px;
-	margin-bottom: 40px;
+	margin-bottom: 42px;
 	text-align: right;
 }
 
@@ -1211,8 +1167,8 @@ a.click {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	margin-left: 5px;
-	background: url("../img/star.png") no-repeat;
+	margin-left: 2px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background: url("../img/star.png") 0 2px no-repeat;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .rating-text {
@@ -1220,13 +1176,10 @@ a.click {
 	width: 110px;
 	height: 27px;
 	margin: 0;
-	line-height: 27px;
+	line-height: 26px;
 	font-size: 14px;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
-	font-family: "PT Sans";
 	text-align: center;
-	text-decoration: none;
 	color: #000000;
-	vertical-align: middle; 
 }
