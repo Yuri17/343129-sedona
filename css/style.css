@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+	position: relative;
 	width: 1200px;
 	height: 100%;
 	margin-left: auto;
@@ -574,9 +575,12 @@ input {
 
 .main-footer {
 	display: table;
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	padding: 0;
 	background: #ffffff;
+	opacity: 0.9;
 }
 
 .section {
