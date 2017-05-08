@@ -69,6 +69,8 @@ body {
 .menu li {
 	float: left;
 	width: 20%;
+	padding-top: 14px;
+	padding-bottom: 15px;
 	list-style-type: none;
 	text-align: left;
 }
@@ -81,8 +83,6 @@ body {
 
 .menu a {
 	display: inline-block;
-	padding-top: 14px;
-	padding-bottom: 15px;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -113,8 +113,8 @@ a.active {
 	padding-top: 76px;
 	padding-bottom: 80px;
 	text-align: center;
-	height: 509px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	background: url("../img/background-photo.jpg") 0 -55px no-repeat;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	height: 509px;
+	background: url("../img/background-photo.jpg") 0 -55px no-repeat;
 	background-color: #88b4fc; 
 }
 
@@ -130,12 +130,12 @@ a.active {
 
 .promo-container {
 	padding: 55px;
-	padding-bottom: 37px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
+	padding-bottom: 37px;
 }
 
 .promo-container-title {
 	width: 100%;
-	margin-top: 5px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-top: 5px;
 	margin-bottom: 34px;
 	text-align: center;
 	line-height: 26px;
@@ -177,7 +177,7 @@ a.active {
 }
 
 .description-title {
-	margin-top: 2px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-top: 2px;
 	margin-bottom: 24px;
 	line-height: 21px;
 	text-align: center;
@@ -224,7 +224,7 @@ a.active {
 }
 
 .recom-title {
-	margin-top: 24px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-top: 24px;
 	margin-bottom: 24px;
 	text-align: center;
 	line-height: 21px;
@@ -289,7 +289,7 @@ a.active {
 }
 
 .features-title {
-	margin-top: 2px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-top: 2px;
 	margin-bottom: 24px;
 	line-height: 21px;
 	text-align: center;
@@ -327,13 +327,10 @@ a.active {
 
 .search {
 	position: relative;
-	/*
-	padding-top: 55px; 
-*/
 }
 
 .search-title {
-	margin-top: 1px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
+	margin-top: 1px;
 	margin-bottom: 30px;
 	text-align: center;
 	font-size: 30px;
@@ -345,8 +342,6 @@ a.active {
 
 .search-text {
 	width: 100%;
-	/*margin-top: 30px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	margin-bottom: 133px;*/
 	margin-bottom: 8px;
 	line-height: 24px;
 	text-align: center;
@@ -360,7 +355,7 @@ a.active {
 	width: 568px;
 	min-height: 480px;
 	left: 50%;
-	top: 205px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	top: 205px;
 	margin-left: -284px;
 }
 
@@ -513,7 +508,7 @@ a.active {
 }
 
 input {
-	outline: none;
+	/*outline: none;*/
 }
 
 .search-form-input:focus {
@@ -658,6 +653,7 @@ input {
 .map {
 	width: 100%;
 	height: 593px;
+	background: url("../img/map.jpg") no-repeat;
 }
 
 /*===================================================
@@ -672,6 +668,11 @@ input {
 	padding: 0;
 	background: #ffffff;
 	opacity: 0.8;
+}
+
+.main-footer-catalog {
+	position: relative;
+	opacity: 1;
 }
 
 .section {
@@ -823,6 +824,10 @@ input {
 	color: #ffffff;
 }
 
+button {
+	/*outline: none;*/
+}
+
 .filter-title {
 	font-size: 16px;
 	font-family: "PT Sans";
@@ -866,12 +871,12 @@ input {
 	left: -2px;
 	width: 26px;
 	height: 24px;
-	background: url("../img/icon-sprite.png") -67px -1px no-repeat;
+	background: url("../img/icon-sprite.png") -68px -1px no-repeat;
 }
 
 .label-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
 	left: 0;
-	background: url("../img/icon-sprite.png") -115px -1px no-repeat;
+	background: url("../img/icon-sprite.png") -116px -1px no-repeat;
 }
 
 .filter-price {
@@ -882,8 +887,8 @@ input {
 
 .filter-title-price {
 	margin-top: 0;
-	margin-bottom: 10px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	padding-left: 1px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-bottom: 10px;
+	padding-left: 1px;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
@@ -976,9 +981,9 @@ input {
 
 .search-button {
 	display: block;
-	width: 137px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	width: 137px;
 	margin: 0 auto;
-	margin-right: 96px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-right: 96px;
 	padding: 6px 35px;
 	font-size: 14px;
 	line-height: 20px;
@@ -1027,7 +1032,7 @@ input {
 .sort {
 	float: left;
 	margin: 0;
-	margin-top: 9px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-top: 9px;
 }
 
 .sort-type {
@@ -1063,21 +1068,20 @@ input {
 	float: left;
 	width: 60px;
 	margin: 0;
-	/*margin-left: 29px;*/
 }
 
 .sort-type:nth-child(2) {
 	float: left;
 	width: 60px;
 	margin: 0;
-	margin-left: 22px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-left: 22px;
 }
 
 .sort-type:nth-child(3) {
 	float: left;
 	width: 80px;
 	margin: 0;
-	margin-left: 22px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-left: 22px;
 }
 
 .sorting-controls {
@@ -1107,14 +1111,6 @@ input {
 	background: url("../img/icon-sprite.png") -337px 10px no-repeat;
 }
 
-/*.down:hover {
-	background: url("../img/icon-sprite.png") -358px 10px no-repeat;
-}
-
-.down:active {
-	background: url("../img/icon-sprite.png") -377px 10px no-repeat;
-}*/
-
 a.click {
 	background: url("../img/icon-sprite.png") -372px 9px no-repeat;
 }
@@ -1122,8 +1118,8 @@ a.click {
 .item {
 	width: 100%;
 	border-bottom: 1px solid #e5e5e5;
-	padding-top: 27px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	padding-bottom: 24px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	padding-top: 27px;
+	padding-bottom: 24px;
 }
 
 .item-view {
@@ -1143,7 +1139,7 @@ a.click {
 
 .item-title {
 	width: 300px;
-	line-height: 21px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	line-height: 21px;
 	font-size: 21px;
 	margin-top: 0;
 	font-family: "PT Sans";
@@ -1165,8 +1161,8 @@ a.click {
 .item-text {
 	width: 300px;
 	line-height: 21px;
-	margin-top: 7px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	margin-bottom: 14px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-top: 7px;
+	margin-bottom: 14px;
 	font-size: 14px;
 	color: #000000 ;
 	text-transform: uppercase;
@@ -1262,8 +1258,8 @@ a.click {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	margin-left: 2px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	background: url("../img/star.png") 0 2px no-repeat;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-left: 2px;
+	background: url("../img/star.png") 0 2px no-repeat;
 }
 
 .rating-text {

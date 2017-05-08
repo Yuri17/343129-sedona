@@ -10,32 +10,34 @@
 		<body>
 			<div class="container">
 				<header class="main-header">
-					<nav class="main-menu">
-						<ul class="menu clearfix">
-							<li>
-								<a href="#">Информация</a>
-							</li>
-							<li>
-								<a href="#">Фото и видео</a>
-							</li>
-							<li>
-								<a href="#" class="active">Гостиницы</a>
-							</li>
-							<li>
-								<a href="#">Карта штата</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="logo">
-						<a href="index.html"><img src="img/logo.png" class="menu-logo" alt="Логотип" width="138" height="70"></a>
+					<div class="inner">
+						<nav class="main-menu">
+							<ul class="menu clearfix">
+								<li>
+									<a href="#">Информация</a>
+								</li>
+								<li>
+									<a href="#">Фото и видео</a>
+								</li>
+								<li>
+									<a href="#" class="active">Гостиницы</a>
+								</li>
+								<li>
+									<a href="#">Карта штата</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="logo">
+							<img src="img/logo.png" class="menu-logo" alt="Логотип" width="138" height="70">
+						</div>
 					</div>
 				</header>
 
 				<main class="main-index">
 					<section class="filters clearfix">
 						<div class="inner clearfix">
-							<div class="col col1">
-								<form action="#" method="get" class="filter-category">
+							<form action="#" method="get" class="filter-category">
+								<div class="col col1">
 									<h2 class="filter-title">Инфраструктура:</h2>
 									<p class="check">
 										<label for="infrastr1" class="label-checkbox">
@@ -58,10 +60,8 @@
 											Wi-Fi
 										</label>
 									</p>
-								</form>
-							</div>
-							<div class="col col2">
-								<form action="#" method="get" class="filter-category">
+								</div>
+								<div class="col col2">
 									<h2 class="filter-title">Тип жилья:</h2>
 									<p class="check">
 										<label for="type1" class="label-checkbox">
@@ -84,29 +84,29 @@
 											Апартаменты
 										</label>
 									</p>
-								</form>
-							</div>
-							<div class="col3">
-								<div class="filter-price">
-									<div class="filter-title-price">Стоимость в сутки (р):</div>
-									<div class="filter-price-slider">
-										<label for="price-from" class="min-price">от
-											<input id="price-from" type="text" value="0" min="0" max="5000">
-										</label>
-										<label for="price-to" class="max-price">до
-											<input id="price-to" type="text" value="3000" min="0" max="5000">
-										</label>
-									</div>
-									<div class="range-control">
-										<div class="scale">
-											<div class="bar"></div>
-										</div>
-										<div class="toggle min-toggle"></div>
-										<div class="toggle max-toggle"></div>
-									</div>
 								</div>
-								<button class="search-button" type="submit">Показать</button>
-							</div>
+								<div class="col3">
+									<div class="filter-price">
+										<div class="filter-title-price">Стоимость в сутки (р):</div>
+										<div class="filter-price-slider">
+											<label for="price-from" class="min-price">от
+												<input id="price-from" type="text" value="0" min="0" max="5000">
+											</label>
+											<label for="price-to" class="max-price">до
+												<input id="price-to" type="text" value="3000" min="0" max="5000">
+											</label>
+										</div>
+										<div class="range-control">
+											<div class="scale">
+												<div class="bar"></div>
+											</div>
+											<div class="toggle min-toggle"></div>
+											<div class="toggle max-toggle"></div>
+										</div>
+									</div>
+									<button class="search-button" type="submit">Показать</button>
+								</div>
+							</form>
 						</div>
 					</section>
 					<section class="results clearfix">
@@ -207,7 +207,7 @@
 					</section>
 				</main>
 
-				<footer class="main-footer clearfix">
+				<footer class="main-footer-catalog clearfix">
 					<section class="section has">
 						<a class="hashtag"><b>#visitSEDONA</b></a>
 					</section>
@@ -220,7 +220,7 @@
 					</section>
 					<section class="section copyright">
 						<p class="footer-copyright-text">Website by
-							<a class="footer-copyright-img" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+						<a class="footer-copyright-img" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 						</p>						
 					</section>
 				</footer>
