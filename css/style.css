@@ -11,11 +11,11 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
 	line-height: 21px;
-	color: #000000;
+	font-size: 14px;
 	font-weight: normal;
 	font-family: "PT Sans", "Arial", sans-serif;
+	color: #000000;
 }
 
 .container {
@@ -29,16 +29,16 @@ body {
 
 .inner {
 	width: 100%;
-	padding-right: 6%;
-	padding-left: 6%; 
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 6%;
+	padding-right: 6%;
 }
 
 .clearfix::after {
 	content: "";
-	clear: both;
 	display: table;
+	clear: both;
 }
 
 /*======================================================
@@ -61,8 +61,8 @@ body {
 }
 
 .menu {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -83,11 +83,11 @@ body {
 
 .menu a {
 	display: inline-block;
+	line-height: 26px;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 26px;
 	text-decoration: none;
 	color: #000000;
 }
@@ -110,19 +110,18 @@ a.active {
 
 .card {
 	position: relative;
+	height: 509px;
 	padding-top: 76px;
 	padding-bottom: 80px;
 	text-align: center;
-	height: 509px;
-	background: url("../img/background-photo.jpg") 0 -55px no-repeat;
-	background-color: #88b4fc; 
+	background: #88b4fc url("../img/background-photo.jpg") 0 -55px no-repeat;
 }
 
 .card::after {
-	width: 100%;
-	height: 57px;
 	content: "";
 	position: absolute;
+	width: 100%;
+	height: 57px;
 	right: 0;
 	bottom: 0;
 	background: url("../img/mask.png") 0 0 no-repeat;
@@ -137,22 +136,22 @@ a.active {
 	width: 100%;
 	margin-top: 5px;
 	margin-bottom: 34px;
-	text-align: center;
 	line-height: 26px;
 	font-size: 21px;
-	color: #000000;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .promo-container-text {
 	width: 100%;
-	text-align: center;
 	margin-top: -7px;
-	font-size: 14px;
-	color: #333333;
-	text-transform: uppercase;
 	line-height: 26px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333333;
 }
 
 .main-information {
@@ -180,19 +179,19 @@ a.active {
 	margin-top: 2px;
 	margin-bottom: 24px;
 	line-height: 21px;
-	text-align: center;
 	font-size: 21px;
-	color: #ffffff;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .description-number {
-	text-align: center;
 	line-height: 21px;
 	font-size: 14px;
-	color: #ffffff;
+	text-align: center;
 	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .description-number::after,
@@ -205,10 +204,10 @@ a.active {
 .description-text {
 	margin-top: 21px;
 	line-height: 21px;
-	text-align: center;
 	font-size: 14px;
-	color: #ffffff;
+	text-align: center;
 	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .recom {
@@ -226,22 +225,22 @@ a.active {
 .recom-title {
 	margin-top: 24px;
 	margin-bottom: 24px;
-	text-align: center;
 	line-height: 21px;
 	font-size: 21px;
+	text-align: center;
 	font-weight: bold;
-	color: #000000;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .recom::before {
 	content: "";
 	display: block;
+	width: 75px;
+	height: 77px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
-	width: 75px;
-	height: 77px;
 	background: url("../img/rec-sprite.png") no-repeat;
 }
 
@@ -256,16 +255,15 @@ a.active {
 .recom-text {
 	margin-bottom: 27px;
 	line-height: 21px;
-	text-align: center;
 	font-size: 14px;
-	font-family: "PT Sans";
-	color: #000000;
+	text-align: center;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .view.left {
-	height: 256px;
 	float: left;
+	height: 256px;
 }
 
 .other-promo {
@@ -292,19 +290,19 @@ a.active {
 	margin-top: 2px;
 	margin-bottom: 24px;
 	line-height: 21px;
-	text-align: center;
 	font-size: 21px;
-	color: #000000;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .features-number {
-	text-align: center;
 	line-height: 21px;
 	font-size: 14px;
-	color: #000000;
+	text-align: center;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .features-text {
@@ -313,11 +311,10 @@ a.active {
 	margin-right: auto;
 	margin-bottom: 0;
 	line-height: 21px;
-	text-align: center;
 	font-size: 14px;
-	font-family: "PT Sans";
-	color: #000000;
+	text-align: center;
 	text-transform: uppercase;  
+	color: #000000;
 }
 
 
@@ -332,39 +329,39 @@ a.active {
 .search-title {
 	margin-top: 1px;
 	margin-bottom: 30px;
-	text-align: center;
-	font-size: 30px;
 	line-height: 24px;
-	color: #000000;
+	font-size: 30px;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .search-text {
 	width: 100%;
 	margin-bottom: 8px;
 	line-height: 24px;
-	text-align: center;
 	font-size: 14px;
-	color: #000000;
+	text-align: center;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .search-block {
 	position: absolute;
+	top: 205px;
+	left: 50%;
 	width: 568px;
 	min-height: 480px;
-	left: 50%;
-	top: 205px;
 	margin-left: -284px;
 }
 
 .search-x {
 	position: relative;
 	z-index: 20;
-	background: #ffffff;
 	padding-top: 55px;
 	padding-bottom: 125px;
+	background: #ffffff;
 }
 
 .search-block-title {
@@ -376,13 +373,13 @@ a.active {
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 86px;
-	text-align: center;
-	background-color: #766357;
 	font-size: 21px;
-	font-family: "PT Sans";
-	color: #ffffff;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #766357;
 }
 
 .search-form-content {
@@ -394,33 +391,27 @@ a.active {
 	min-height: 285px;
 	background-color: #ffffff;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
 	animation-name: move_form;
 	animation-duration: 600ms;
 	animation-timing-function: linear;
-	
 }
 
 .search-form-show {
+	display: none;
 	position: absolute;
 	z-index: 10;
-	display: none;
-	animation-name: move_form_from;
-	animation-duration: 700ms;
-	animation-timing-function: linear;
 }
-
 
 @-webkit-keyframes move_form {
 	0% {
 		-webkit-transform: translate(0%, -405px);
 			-moz-transform: translate(0%, -405px);
-	    		transform: translate(0%, -405px);
+				transform: translate(0%, -405px);
 	}
 	100% {
-    	-webkit-transform: translate(0%, 0px);
-    		-moz-transform: translate(0%, 0px);
-    			transform: translate(0%, 0px);
+		-webkit-transform: translate(0%, 0px);
+			-moz-transform: translate(0%, 0px);
+				transform: translate(0%, 0px);
 	}
 }
 
@@ -428,38 +419,12 @@ a.active {
 	0% {
 		-webkit-transform: translate(0%, -405px);
 			-moz-transform: translate(0%, -405px);
-	    		transform: translate(0%, -405px);
+				transform: translate(0%, -405px);
 	}
 	100% {
-    	-webkit-transform: translate(0%, 0px);
-    		-moz-transform: translate(0%, 0px);
-    			transform: translate(0%, 0px);
-	}
-}
-
-@-webkit-keyframes move_form_from {
-	0% {
-		-webkit-transform: translate(0%, 0);
-    		-moz-transform: translate(0%, 0);
-    			transform: translate(0%, 0);
-	}
-	100% {
-    	-webkit-transform: translate(0%, -500px);
-			-moz-transform: translate(0%, -500px);
-	    		transform: translate(0%, -500px);	
-	}
-}
-
-@keyframes move_form_from {
-	0% {
-		-webkit-transform: translate(0%, 0);
-    		-moz-transform: translate(0%, 0);
-    			transform: translate(0%, 0);
-	}
-	100% {
-    	-webkit-transform: translate(0%, -200px);
-			-moz-transform: translate(0%, -200px);
-	    		transform: translate(0%, -200px);	
+		-webkit-transform: translate(0%, 0px);
+			-moz-transform: translate(0%, 0px);
+				transform: translate(0%, 0px);
 	}
 }
 
@@ -489,26 +454,20 @@ a.active {
 	position: relative;
 	width: 100%;
 	height: 38px;
-	background-color: #f2f2f2;
 	padding: 0;
 	padding-left: 14px;
 	padding-right: 40px;
 	font-size: 14px;
-	border: none;
 	vertical-align: middle;
 	text-align: left;
-	font-size: 14px;
-	font-family: "PT Sans";
 	font-weight: bold;
 	text-transform: uppercase;
+	border: none;
+	background-color: #f2f2f2;
 }
 
 .search-form-input:hover {
 	background-color: #ebebeb;
-}
-
-input {
-	/*outline: none;*/
 }
 
 .search-form-input:focus {
@@ -555,8 +514,8 @@ input {
 .col-span {
 	width: 114px;
 	height: 38px;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .col-control {
@@ -564,10 +523,10 @@ input {
 	position: relative;
 	width: 38px;
 	height: 38px;
-	background-color: #f2f2f2;
 	line-height: 38px;
 	font-size: 0px;
 	text-decoration: none;
+	background-color: #f2f2f2;
 }
 
 .col-control::after {
@@ -609,13 +568,12 @@ input {
 	float: left;
 	width: 38px;
 	height: 38px;
-	background-color: #f2f2f2;
-	border: none;
-	text-align: center;
 	font-size: 14px;
-	font-family: "PT Sans";
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
+	border: none;
+	background-color: #f2f2f2;
 }
 
 .search-form-junior label {
@@ -628,15 +586,16 @@ input {
 	margin: 0;
 	margin-top: 1px;
 	padding: 16px;
+	line-height: 26px;
+	font-size: 21px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #81b3d2;
-	font-size: 21px;
-	line-height: 26px;
-	color: rgba(255, 255, 255, 1);
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+	border: none;
+	background-color: #81b3d2;
 }
 
 .search-btn:hover {
@@ -644,8 +603,8 @@ input {
 }
 
 .search-btn:active {
-	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.4);
+	background-color: #5496bd;
 }
 
 /*Карта*/
@@ -678,19 +637,18 @@ input {
 .section {
 	display: table-cell;
 	width: 400px;
+	padding: 36px 0;
 	vertical-align: middle;
 	text-align: center;
-	padding: 36px 0;
 }
 
 .hashtag {
 	display: block;
 	font-size: 21px;
-	font-family: "PT Sans";
-	color: #000000;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
+	color: #000000;
 }
 
 .social-block {
@@ -702,9 +660,9 @@ input {
 .footer-social {
 	float: left;
 	position: relative;
-	margin-right: 6px;
 	width: 46px;
 	height: 48px;
+	margin-right: 6px;
 	font-size: 0;
 	background-color: #81b3d2;
 }
@@ -755,11 +713,11 @@ input {
 	margin-right: auto;
 	margin: 0;
 	padding-right: 117px;
-	font-size: 14px;
-	color: #000000;
-	text-transform: uppercase;
 	line-height: 26px;
+	font-size: 14px;
 	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
 } 
 
 .footer-copyright-img {
@@ -773,9 +731,9 @@ input {
 	position: absolute;
 	top: -23px;
 	left: 4px;
-	font-size: 0;
 	width: 113px;
 	height: 40px;
+	font-size: 0;
 	background: url("../img/html-sprite.png") 0px -80px no-repeat;
 }
 
@@ -802,7 +760,6 @@ input {
 	float: left;
 	width: 273px;
 	padding-top: 28px;
-
 	color: #ffffff;
 }
 
@@ -824,20 +781,15 @@ input {
 	color: #ffffff;
 }
 
-button {
-	/*outline: none;*/
-}
-
 .filter-title {
-	font-size: 16px;
-	font-family: "PT Sans";
-	color: #ffffff;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 21px;
-	text-align: left;
 	margin: 0;
     margin-bottom: 24px;
+	line-height: 21px;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .check {
@@ -852,13 +804,13 @@ button {
 .label-checkbox {
 	position: relative;
 	padding-left: 40px;
-	cursor: pointer;
-	font-size: 14px;
-	color: #ffffff;
-	text-transform: uppercase;
 	line-height: 21px;
+	font-size: 14px;
 	vertical-align: middle;
 	text-align: left;
+	text-transform: uppercase;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .col2 .label-checkbox {
@@ -876,22 +828,22 @@ button {
 
 .label-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
 	left: 0;
-	background: url("../img/icon-sprite.png") -116px -1px no-repeat;
+	background: url("../img/icon-sprite.png") -117px -1px no-repeat;
 }
 
 .filter-price {
 	width: 100%;
-	color: #ffffff;
 	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .filter-title-price {
 	margin-top: 0;
 	margin-bottom: 10px;
 	padding-left: 1px;
-	font-weight: bold;
-	font-size: 16px;
 	line-height: 21px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .filter-price-slider {
@@ -916,8 +868,8 @@ button {
 
 .filter-price-slider label {
 	display: inline-block;
-	font-size: 14px;
 	line-height: 30px;
+	font-size: 14px;
 	cursor: pointer;
 }
 
@@ -932,10 +884,10 @@ button {
 .filter-price-slider input {
 	width: 50px;
 	margin: 0;
-	color: inherit;
 	font: inherit;
-	background: none;
+	color: inherit;
 	border: none;
+	background: none;
 }
 
 .range-control {
@@ -951,20 +903,20 @@ button {
 .range-control .bar {
 	width: 80%;
 	height: 2px;
-	background: #ffffff;
+	background-color: #ffffff;
 }
 
 .toggle {
 	position: absolute;
-    top: -9px;
-    width: 4px;
-    height: 4px;
-    background: #ababab;
-    border: 8px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-    box-sizing: content-box;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #ffffff;
+	background: #ababab;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+	box-sizing: content-box;
 }
 
 .toggle:hover {
@@ -985,13 +937,13 @@ button {
 	margin: 0 auto;
 	margin-right: 96px;
 	padding: 6px 35px;
-	font-size: 14px;
 	line-height: 20px;
-	color: #ffffff;
+	font-size: 14px;
 	text-transform: uppercase;
-	background: transparent;
+	color: #ffffff;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	background: transparent;
 	cursor: pointer;
 }
 
@@ -1002,20 +954,20 @@ button {
 
 .results {
 	width: 100%;
-	border-bottom: 1px solid #e5e5e5;
 	padding-top: 31px;
 	padding-bottom: 30px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .results-title {
 	float: left;
 	width: 140px;
 	margin: 0;
+	line-height: 26px;
 	font-size: 21px;
-	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
-	line-height: 26px;
+	color: #000000;
 }
 
 .sorting-title {
@@ -1023,10 +975,10 @@ button {
 	margin: 0;
 	margin-top: 4px;
 	margin-left: 24px;
-	font-size: 12px;
-	color: #000000;
 	line-height: 21px;
+	font-size: 12px;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .sort {
@@ -1041,17 +993,17 @@ button {
 
 .sort-type a {
 	float: left;
-	font-size: 12px;
-	color: #b2b2b2;
 	line-height: 12px;
+	font-size: 12px;
 	text-transform: uppercase;
 	text-decoration: none;
+	color: #b2b2b2;
 	border-bottom: 1px dotted #b2b2b2; 
 }
 
 .sort-type .active {
-	border: none;
 	color: #81b3d2;
+	border: none;
 }
 
 .sort-type a:hover {
@@ -1117,9 +1069,9 @@ a.click {
 
 .item {
 	width: 100%;
-	border-bottom: 1px solid #e5e5e5;
 	padding-top: 27px;
 	padding-bottom: 24px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .item-view {
@@ -1139,15 +1091,14 @@ a.click {
 
 .item-title {
 	width: 300px;
+	margin-top: 0;
 	line-height: 21px;
 	font-size: 21px;
-	margin-top: 0;
-	font-family: "PT Sans";
-	color: rgb(0, 0, 0);
+	text-align: left;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-align: left;
 	text-decoration: none;
+	color: #000000;
 }
 
 .item-title:hover {
@@ -1160,27 +1111,27 @@ a.click {
 
 .item-text {
 	width: 300px;
-	line-height: 21px;
 	margin-top: 7px;
 	margin-bottom: 14px;
+	line-height: 21px;
 	font-size: 14px;
-	color: #000000 ;
-	text-transform: uppercase;
 	text-align: left;
+	text-transform: uppercase;
+	color: #000000 ;
 }
 
 .type {
 	float: left;
 	width: 95px;
-	line-height: 21px;
 	margin: 0;
+	line-height: 21px;
 }
 
 .price {
 	float: left;
-	line-height: 21px;
 	margin: 0;
 	margin-left: 21px; 
+	line-height: 21px;
 }
 
 .item-buttons {
@@ -1195,14 +1146,13 @@ a.click {
 	height: 27px;
 	line-height: 27px;
 	font-size: 14px;
-	text-transform: uppercase;
-	font-family: "PT Sans";
-	font-weight: bold;
-	background-color: #81b3d2;
 	text-align: center;
+	vertical-align: middle;  
+	text-transform: uppercase;
+	font-weight: bold;
 	text-decoration: none;
 	color: #ffffff;
-	vertical-align: middle;  
+	background-color: #81b3d2;
 }
 
 .btn-details:hover {
@@ -1210,26 +1160,25 @@ a.click {
 }
 
 .btn-details:active {
-	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.4);
+	background-color: #5496bd;
 }
 
 .btn-reserv {
 	float: left;
 	display: inline-block;
 	width: 143px;
-	margin-left: 6px;
 	height: 27px;
-	background-color: #766357;
+	margin-left: 6px;
 	line-height: 27px;
 	font-size: 14px;
-	text-transform: uppercase;
-	font-family: "PT Sans";
-	font-weight: bold;
 	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: bold;
 	text-decoration: none;
-	color: #ffffff;
-	vertical-align: middle; 
+	color: #ffffff; 
+	background-color: #766357;
 }
 
 .btn-reserv:hover {
@@ -1237,15 +1186,15 @@ a.click {
 }
 
 .btn-reserv:active {
-	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.4);
+	background-color: #503e33;
 }
 
 .item-rating {    
 	float: right;
+	position: relative;
 	width: 110px;
 	margin-left: -110px;
-	position: relative;
 }
 
 .rating-stars {
@@ -1259,6 +1208,7 @@ a.click {
 	width: 18px;
 	height: 18px;
 	margin-left: 2px;
+	font-size: 0;
 	background: url("../img/star.png") 0 2px no-repeat;
 }
 
@@ -1269,8 +1219,8 @@ a.click {
 	margin: 0;
 	line-height: 26px;
 	font-size: 14px;
-	background-color: #f2f2f2;
-	text-transform: uppercase;
 	text-align: center;
+	text-transform: uppercase;
 	color: #000000;
+	background-color: #f2f2f2;
 }

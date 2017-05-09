@@ -3,7 +3,7 @@
 		<head>
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="css/normalize.css">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link rel="stylesheet" type="text/css" href="css/style.min.css">
 			<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 			<title>HTML Academy: Седона</title>
 		</head>
@@ -109,7 +109,7 @@
 						</div>
 						<div class="search-block">
 							<div class="search-form">
-								<form method="post" action="\search">
+								<form method="post" action="search">
 									<a href="form.html" class="search-block-title">Поиск гостиницы в Седоне</a>
 									<div class="search-form-content clearfix">
 										<div class="search-form-row">
@@ -144,7 +144,7 @@
 												</span>
 											</div>
 										</div>
-										<a href="#" class="search-btn">Найти</a>	
+										<button class="search-btn">Найти</button>
 									</div>
 								</form>
 							</div>
@@ -171,23 +171,8 @@
 					</section>
 				</footer>
 			</div>
-			<script>
-				var link = document.querySelector(".search-block-title");
-				var searchForm = document.querySelector(".search-form-content");
-				var dateIn = searchForm.querySelector("[name=date-in]");
-				var dateOut = searchForm.querySelector("[name=date-out]");
-
-				link.addEventListener("click", function(event) {
-					event.preventDefault();
-					searchForm.classList.toggle("search-form-show");
-				});
-
-				form.addEventListener("submit", function(event) {
-					if (!dateIn.value|| !dateOut.value) {
-						event.preventDefault();
-						console.log("Нужно выбрать даты поездки");ы
-					}
-				});
-			</script>
+			
+			<script src="js/script.min.js"></script>
+			
 		</body>
 	</html>
