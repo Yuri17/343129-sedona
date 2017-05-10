@@ -87,6 +87,7 @@ body {
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
+	vertical-align: middle;
 	text-align: center;
 	text-decoration: none;
 	color: #000000;
@@ -432,6 +433,7 @@ a.active {
 	display: inline-block;
 	width: 458px;
 	height: 38px;
+	vertical-align: middle;
 	margin-bottom: 29px;
 }
 
@@ -448,6 +450,7 @@ a.active {
 	display: inline-block;
 	position: relative;
 	width: 346px;
+	vertical-align: middle;
 }
 
 .search-form-input {
@@ -497,6 +500,7 @@ a.active {
 .search-form-junior {
 	display: inline-block;
 	height: 38px;
+	vertical-align: middle;
 	margin-bottom: 54px;
 }
 
@@ -870,6 +874,7 @@ a.active {
 	display: inline-block;
 	line-height: 30px;
 	font-size: 14px;
+	vertical-align: middle;
 	cursor: pointer;
 }
 
@@ -1209,6 +1214,7 @@ a.click {
 	height: 18px;
 	margin-left: 2px;
 	font-size: 0;
+	vertical-align: baseline;
 	background: url("../img/star.png") 0 2px no-repeat;
 }
 
@@ -1220,6 +1226,7 @@ a.click {
 	line-height: 26px;
 	font-size: 14px;
 	text-align: center;
+	vertical-align: middle;
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #f2f2f2;
