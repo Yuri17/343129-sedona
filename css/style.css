@@ -485,7 +485,7 @@ a.active {
 	width: 22px;
 	height: 22px;
 	font-size: 0;
-	background: url("../img/icon-sprite.png") 1px 0 no-repeat;
+	background: #f2f2f2 url("../img/icon-sprite.png") 1px 0 no-repeat;
 }
 
 .cal-img:hover {
@@ -616,7 +616,7 @@ a.active {
 .map {
 	width: 100%;
 	height: 593px;
-	background: url("../img/map.jpg") no-repeat;
+	background: #9dce75 url("../img/map.jpg") no-repeat;
 }
 
 /*===================================================
@@ -756,8 +756,7 @@ a.active {
 .filters {
 	width: 100%;
 	height: 217px;
-	background-color: #7aadff;
-	background: url("../img/filter-background.jpg") no-repeat; 
+	background: #7aadff url("../img/filter-background.jpg") no-repeat; 
 }
 
 .col {
